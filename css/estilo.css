@@ -1,0 +1,372 @@
+/*estandarizar en 1rem*/
+html{
+    font-size: 62,5%;
+}
+
+*{
+    margin: 5px;
+    padding: 0px;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+iframe{
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+/* Grids */
+/* GridIndex */
+.gridIndex{
+    display: grid;
+    grid-template-areas: 
+    "logoIzq tituloCen logoDer"
+    "navbar navbar navbar"
+    "main main main"
+    "footer footer footer";
+    grid-template-columns: repeat(3, 25% 50% 25%);
+    grid-template-rows: repeat(4, auto);
+}
+header{grid-area: logoIzq;}
+.navbar{grid-area: navbar;}
+.logoDer{grid-area: logoDer;}
+.tituloCen{grid-area: tituloCen;}
+/* Fin grid Index */
+
+/* Formato titulo */
+.titulo{
+    font-size: 3rem;
+    font-family: 'Rubik Burned', cursive;
+    color:white;
+    text-align: center;
+    background-color: rgb(16, 4, 122);
+}
+
+#logo{text-align: center;}
+
+/* GridMain Index */
+.gridMainIndex{
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 
+    "servicios servicios servicios"
+    "ofrecemos ofrecemos ofrecemos"
+    "venta importacion soporte"
+    "laptopsVenta perifericos soporteImg";
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(4, auto);
+    background-image:url("../images/back-fondo.jpg"); 
+}
+.servicios{grid-area: servicios;}
+.ofrecemos{grid-area: ofrecemos;}
+.venta{grid-area: venta;}
+.importacion{grid-area: importacion;}
+.soporte{grid-area: soporte;}
+.laptopsVenta{grid-area: laptopsVenta;}
+.perifericos{grid-area: perifericos;}
+.soporteImg{grid-area: soporteImg;}
+/* Fin grid main */
+
+/*Texto descricion servicios*/
+.textoServicios{
+    font-style:normal; /*estilo texto*/
+    font-family:'Gill Sans MT'; /*fuente*/
+    font-size: 2rem; /*tamañofuente*/
+    text-align: center; /*alineacion*/
+    line-height: 1.6; /*Interlineado*/
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    border: 2px;
+    padding: 30px;
+    color:white;
+}
+
+/* Grid footer */
+footer{grid-area: footer; display: flex; justify-content: space-evenly;background-color: white;}
+/* Fin grid footer */
+nav ul{display: flex; justify-content:space-evenly;background-color: black;font-size: 1.5rem;}
+li{list-style-type: none;margin: 10px;}
+a{text-decoration: none; color: white; font-size: 20px;font-size: 2rem;}
+
+body{background-image:url("../images/back-fondo.jpg");}
+
+.bordesServicios{border-radius: 20px;}
+.bordeInternoServ{border: solid 3px white;}
+
+/* GridMain Productos */
+.gridMainProductos{
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 
+    "nuestrosProd nuestrosProd"
+    "notebooksImgP monitoresImgP"
+    "notebooksTxt monitoresTxt"
+    "desktopsImgP consolasImgP"
+    "desktopsTxt consolasTxt";
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(5, auto);
+    background-image:url("../images/back-fondo.jpg"); 
+}
+.nuestrosProd{grid-area: nuestrosProd;}
+.notebooksImg{grid-area:notebooksImg;}
+.notebooksTxt{grid-area: notebooksTxt;}
+.monitoresImg{grid-area: monitoresImg;}
+.monitoresTxt{grid-area: monitoresTxt;}
+.desktopsImg{grid-area: desktopsImg;}
+.desktopsTxt{grid-area: desktopsTxt;}
+.consolasImg{grid-area: consolasImg;}
+.consolasTxt{grid-area: consolasTxt;}
+/* Fin grid main */
+.borderProductos{border: 10px white solid;margin: 5px;}
+/*estilo productos*/
+.estiloProductos{
+    color: white;
+    font-size: 2rem;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Grid main Nosotros */
+.gridMainNosotros{
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+    "tituloNos tituloNos tituloNos"
+    "ventaImgNos textoVentaNos textoVentaNos"
+    "textoAtencionNos textoAtencionNos atencionImgNos"
+    "enviosImgNos textoEnviosNos textoEnviosNos"
+    "textoPagosNos textoPagosNos pagosImgNos";
+    grid-template-columns: repeat(3,33%);
+    grid-template-rows: repeat(5,auto);
+}
+.tituloNos{grid-area: tituloNos;}
+.ventaImgNos{grid-area: ventaImgNos;}
+.textoVentaNos{grid-area: textoVentaNos;}
+.textoAtencionNos{grid-area: textoAtencionNos;}
+.atencionImgNos{grid-area: atencionImgNos;}
+.enviosImgNos{grid-area: enviosImgNos;}
+.textoEnviosNos{grid-area: textoEnviosNos;}
+.textoPagosNos{grid-area: textoPagosNos;}
+.pagosImgNos{grid-area: pagosImgNos;}
+/* Fin grid main Nosotros */
+
+/*estilo mas de nosotros*/
+.textoNosotros{
+    font-style: normal;
+    font-size: 1.8rem;
+    font-family: 'Gill Sans';
+    color: white;
+    text-align: justify;
+    padding-top: 100px;
+}
+.estiloNosotros{
+    font-style: normal;
+    font-size: 3rem;
+    font-family: 'Gill Sans';
+    color: white;
+    text-align: center;
+}
+/* Fin Grid Nosotros */
+
+/* Grid Feedback */
+.gridMainFeed{
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+    "tituloFeed tituloFeed tituloFeed"
+    "video1 textoVideo1 textoVideo1"
+    "textoVideo2 textoVideo2 video2";
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(3,auto);
+}
+.tituloFeed{grid-area: tituloFeed;}
+.video1{grid-area: video1;}
+.textoVideo1{grid-area: textoVideo1;padding: 50px;text-align: justify;}
+.video2{grid-area: video2;padding-right: 100px;}
+.textoVideo2{grid-area: textoVideo2;padding: 50px;text-align: right;}
+/* Fin Grid Feedback */
+/*estilo feedback*/
+.estiloFeed{
+    border: solid 5px blue;
+    color:white;
+    padding-left:50px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+}
+/* Grid formulario */
+.gridMainFormulario{
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+    "contactanosImg"
+    "formulario";
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2,auto);
+}
+.contactanosImg{
+    float: left; width: 390px;
+}
+.formulario{
+    height: 100%;
+    box-sizing: border-box;
+    border: solid white 10px;
+    border-radius: 5px;
+    width: 800px;
+}
+.label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    color: #DADCE0;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+}
+/* Fin grid Formulario */
+
+
+/* Mobile 769px */
+@media only screen and (max-width: 769px){
+    /* grid Index */
+    ul{display: flex;flex-wrap: wrap;}
+    .gridIndex{
+        grid-area: body;
+        display: grid;
+        grid-template-areas: 
+        "logo navbar"
+        "main main"
+        "footer footer";
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(3, auto);
+        background-image: url(../images/wallmobile.jpg);
+    }
+    header{grid-area: logo;}
+    .navbar{grid-area: navbar;}
+    /* Fin grid Index */
+    /* grid main Index mobile*/
+    .gridMainIndex{
+        grid-area: main;
+        display: grid;
+        grid-template-areas:
+        "servicios"
+        "ofrecemos"
+        "venta"
+        "importacion"
+        "soporte";
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5,auto);
+    }
+    .servicios{grid-area: servicios;}
+    .ofrecemos{grid-area: ofrecemos;}
+    .venta{grid-area: venta;}
+    .importacion{grid-area: importacion;}
+    .soporte{grid-area: soporte;}
+    /* Fin grid main Index mobile*/
+    /* elementos ocultos mobile */
+    .laptopsVenta{display: none;}
+    .perifericos{display: none;}
+    .soporteImg{display: none;}
+    .logoDer{display: none;}
+    .tituloCen{display: none;}
+    /* fin elementos ocultos */
+
+    /* Grid main Productos Mobile */
+    .gridMainProductos{
+        grid-area: main;
+        display: grid;
+        grid-template-areas:
+        "nuestrosProd"
+        "notebooksImgP"
+        "monitoresImgP"
+        "desktopsImgP"
+        "consolasImgP";
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5,auto);
+    }
+    .nuestrosProd{grid-area: nuestrosProd;}
+    .notebooksImgP{grid-area: notebooksImgP;}
+    .monitoresImgP{grid-area: monitoresImgP;}
+    .desktopsImgP{grid-area: desktopsImgP;}
+    .consolasImgP{grid-area: consolasImgP;}
+    /* fin grid productos mobile */
+    /* Elementos ocultos productos */
+    .notebooksTxt{display: none;}
+    .monitoresTxt{display: none;}
+    .desktopsTxt{display: none;}
+    .consolasTxt{display: none;}
+    /* fin elementos ocultos */
+
+    /* grid nosotros mobile */
+    .gridMainNosotros{
+        grid-area: main;
+        display: grid;
+        grid-template-areas:
+        "tituloNos"
+        "ventaImgNos"
+        "textoVentaNos"
+        "atencionImgNos"
+        "textoAtencionNos "
+        "enviosImgNos"
+        "textoEnviosNos"
+        "pagosImgNos"
+        "textoPagosNos";
+        grid-template-columns:100%;
+        grid-template-rows: repeat(9,auto);
+    }
+    .tituloNos{grid-area: tituloNos;}
+    .ventaImgNos{grid-area: ventaImgNos;}
+    .textoVentaNos{grid-area: textoVentaNos;padding-top: 0;}
+    .atencionImgNos{grid-area: atencionImgNos;}
+    .textoAtencionNos{grid-area: textoAtencionNos;padding-top: 0;}
+    .enviosImgNos{grid-area: enviosImgNos;}
+    .textoEnviosNos{grid-area: textoEnviosNos;padding-top: 0;}
+    .pagosImgNos{grid-area: pagosImgNos;}
+    .textoPagosNos{grid-area: textoPagosNos;padding-top: 0;}
+    /* Fin grid Nosotros Mobile */
+    /* Grid Feedback Mobile */
+    .gridMainFeed{
+        grid-area: main;
+        display: grid;
+        grid-template-areas:
+        "tituloFeed"
+        "textoVideo1"
+        "video1"
+        "textoVideo2"
+        "video2";
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5,auto);
+    }
+    .tituloFeed{grid-area: tituloFeed;font-size: 1.5rem;}
+    .video1{grid-area: video1;}
+    .textoVideo1{grid-area: textoVideo1;padding: 0px;text-align:start; font-size: 1.4rem;}
+    .video2{grid-area: video2;padding-right: 0px;}
+    .textoVideo2{grid-area: textoVideo2;padding: 0px;text-align: start;font-size: 1.4rem;}
+    /* Fin Grid feeback Mobile */
+    /* Grid Formulario Mobile */
+    .gridMainFormulario{
+        grid-area: main;
+        display: grid;
+        grid-template-areas:
+        "contactanosImg"
+        "formulario";
+        grid-template-columns: 50%;
+        grid-template-rows: repeat(2,auto);
+    }
+    .contactoForm{grid-area: contactoForm;}
+    .formulario{
+        grid-area: formulario;
+        width: 380px;
+        height: auto;
+    }
+    /* Fin Formulario Mobile */
+    footer{grid-area: footer;display: flex;flex-direction: row;}
+}
+/* fin version Mobile */
