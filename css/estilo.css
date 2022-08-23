@@ -242,7 +242,7 @@ textarea{font-size: 18px;}
 /* Mobile 769px */
 @media only screen and (max-width: 769px){
     /* grid Index */
-    nav ul{display: flex;flex-wrap: wrap;font-size: 1rem;}
+    nav ul{display: flex;flex-wrap: wrap;font-size: 1.3rem;}
     .gridIndex{
         grid-area: body;
         display: grid;
