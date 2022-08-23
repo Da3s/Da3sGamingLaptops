@@ -91,7 +91,7 @@ footer{grid-area: footer; display: flex; justify-content: space-evenly;backgroun
 /* Fin grid footer */
 nav ul{display: flex; justify-content:space-evenly;background-color: black;font-size: 1.5rem;}
 li{list-style-type: none;margin: 10px;}
-a{text-decoration: none; color: white; font-size: 20px;font-size: 2rem;}
+a{text-decoration: none; color: white; font-size: 20px;font-size: 2rem;font-family: 'Silkscreen', cursive;}
 
 body{background-image:url("../images/back-fondo.jpg");}
 
@@ -230,6 +230,10 @@ body{background-image:url("../images/back-fondo.jpg");}
     transition: 0.5s;
     z-index: 0;
 }
+input{font-size: 18px;transition: 1s;}
+input:focus{font-size: 20px;}
+select{font-size: 20px;}
+textarea{font-size: 18px;}
 /* Fin grid Formulario */
 
 
