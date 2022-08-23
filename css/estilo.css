@@ -297,7 +297,7 @@ textarea{font-size: 18px;}
         grid-template-columns: 100%;
         grid-template-rows: repeat(5,auto);
     }
-    .nuestrosProd{grid-area: nuestrosProd;}
+    .nuestrosProd{grid-area: nuestrosProd;font-size: 1.6rem;}
     .notebooksImgP{grid-area: notebooksImgP;}
     .monitoresImgP{grid-area: monitoresImgP;}
     .desktopsImgP{grid-area: desktopsImgP;}
