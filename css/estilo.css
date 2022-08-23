@@ -20,6 +20,10 @@ iframe{
     margin: auto;
 }
 
+nav ul{display: flex; justify-content:space-evenly;background-color: black;font-size: 1.5rem;}
+li{list-style-type: none;margin: 10px;}
+a{text-decoration: none; color: white; font-size: 1.8rem;font-family: 'Silkscreen', cursive;}
+
 /* Grids */
 /* GridIndex */
 .gridIndex{
@@ -89,9 +93,6 @@ header{grid-area: logoIzq;}
 /* Grid footer */
 footer{grid-area: footer; display: flex; justify-content: space-evenly;background-color: white;}
 /* Fin grid footer */
-nav ul{display: flex; justify-content:space-evenly;background-color: black;font-size: 1.5rem;}
-li{list-style-type: none;margin: 10px;}
-a{text-decoration: none; color: white; font-size: 20px;font-size: 2rem;font-family: 'Silkscreen', cursive;}
 
 body{background-image:url("../images/back-fondo.jpg");}
 
