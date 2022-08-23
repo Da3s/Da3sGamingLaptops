@@ -241,7 +241,7 @@ textarea{font-size: 18px;}
 /* Mobile 769px */
 @media only screen and (max-width: 769px){
     /* grid Index */
-    ul{display: flex;flex-wrap: wrap;}
+    ul{display: flex;flex-wrap: wrap;font-size: 1rem;}
     .gridIndex{
         grid-area: body;
         display: grid;
