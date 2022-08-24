@@ -366,7 +366,7 @@ textarea{font-size: 18px;}
         grid-template-areas:
         "contactanosImg"
         "formulario";
-        grid-template-columns: 50%;
+        grid-template-columns: 100%;
         grid-template-rows: repeat(2,auto);
     }
     .contactoForm{grid-area: contactoForm;}
