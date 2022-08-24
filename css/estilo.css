@@ -206,21 +206,24 @@ body{background-image:url("../images/back-fondo.jpg");}
     grid-area: main;
     display: grid;
     grid-template-areas:
-    "contactanosImg"
-    "formulario";
-    grid-template-columns: 100%;
+    "blanco contactanosImg contactanosImg"
+    "blanco formulario formulario";
+    grid-template-columns: 33% 33% 33%;
     grid-template-rows: repeat(2,auto);
 }
 .contactanosImg{
+    grid-area: contactanosImg;
     float: left; width: 390px;
 }
 .formulario{
+    grid-area: formulario;
     height: 100%;
     box-sizing: border-box;
     border: solid white 10px;
     border-radius: 5px;
-    width: 800px;
+    width: 500px;
 }
+.blanco{grid-area: blanco;}
 .label {
     position: absolute;
     top: 15px;
