@@ -6,6 +6,7 @@ html{
 *{
     margin: 5px;
     padding: 0px;
+    overflow-x: hidden;
 }
 
 img{
@@ -250,10 +251,10 @@ textarea{font-size: 18px;}
         grid-area: body;
         display: grid;
         grid-template-areas: 
-        "logo navbar"
-        "main main"
-        "footer footer";
-        grid-template-columns: repeat(2, 50%);
+        "logo navbar navbar"
+        "main main main"
+        "footer footer footer";
+        grid-template-columns: repeat(3, 33%);
         grid-template-rows: repeat(3, auto);
         background-image: url(../images/wallmobile.jpg);
     }
@@ -264,6 +265,7 @@ textarea{font-size: 18px;}
     .gridMainIndex{
         grid-area: main;
         display: grid;
+        font-size: 1.3rem;
         grid-template-areas:
         "servicios"
         "ofrecemos"
@@ -291,6 +293,7 @@ textarea{font-size: 18px;}
     .gridMainProductos{
         grid-area: main;
         display: grid;
+        font-size: 1.3rem;
         grid-template-areas:
         "nuestrosProd"
         "notebooksImgP"
@@ -317,6 +320,7 @@ textarea{font-size: 18px;}
     .gridMainNosotros{
         grid-area: main;
         display: grid;
+        font-size: 1.3rem;
         grid-template-areas:
         "tituloNos"
         "ventaImgNos"
@@ -344,6 +348,7 @@ textarea{font-size: 18px;}
     .gridMainFeed{
         grid-area: main;
         display: grid;
+        font-size: 1.3rem;
         grid-template-areas:
         "tituloFeed"
         "textoVideo1"
@@ -363,6 +368,7 @@ textarea{font-size: 18px;}
     .gridMainFormulario{
         grid-area: main;
         display: grid;
+        font-size: 1.3rem;
         grid-template-areas:
         "contactanosImg"
         "formulario";
@@ -372,7 +378,7 @@ textarea{font-size: 18px;}
     .contactoForm{grid-area: contactoForm;}
     .formulario{
         grid-area: formulario;
-        width: 380px;
+        width: auto;
         height: auto;
     }
     /* Fin Formulario Mobile */
