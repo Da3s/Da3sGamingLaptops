@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap" rel="stylesheet">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="../css/estilo.css">
     <title>DGL Home</title>
 </head>
+
 <body class="gridIndex">
     <!-- header -->
     <header id="logo">
@@ -23,7 +25,8 @@
         <img src="../images/Da3s.jpg" alt="logodgl">
     </div>
     <div class="navbar">
-        <nav><hr>
+        <nav>
+            <hr>
             <ul>
                 <li>
                     <a href="../index.html">Home</a>
@@ -40,67 +43,74 @@
                 <li>
                     <a href="#">Contacto</a>
                 </li>
-            </ul><hr>
+            </ul>
+            <hr>
         </nav>
     </div>
-<!-- Fin Header -->
-<!-- Comienzo Main -->
-<main class="gridMainFormulario ">
-    <div class="contactanosImg">
-        <img src="../images/contactanos.png" alt="contactanos">
-    </div>
-    <form action="#" class="formulario estiloForm">
-        <div>
-            <label for="Nombre" class="label"></label>
-            <input type="text" name="Nombre" placeholder="Nombre">
+    <!-- Fin Header -->
+    <!-- Comienzo Main -->
+    <main class="gridMainFormulario ">
+        <div class="contactanosImg">
+            <img src="../images/contactanos.png" alt="contactanos">
         </div>
-        <div>
-            <label for="Apellido" class="label"></label>
-            <input type="text" name="Apellido" placeholder="Apellido">
+        <form action="#" class="formulario estiloForm">
+            <div>
+                <label for="Nombre" class="label"></label>
+                <input type="text" name="Nombre" placeholder="Nombre">
+            </div>
+            <div>
+                <label for="Apellido" class="label"></label>
+                <input type="text" name="Apellido" placeholder="Apellido">
+            </div>
+            <div>
+                <label for="Correo" class="label"></label>
+                <input type="text" name="Correo" placeholder="Correo">
+            </div>
+            <div>
+                <label for="Telefono" class="label"></label>
+                <input type="text" name="Telefono" inputmode="numeric" pattern="\d*" placeholder="Telefono">
+            </div>
+            <div>
+                <select name="option" id="option">
+                    <option value="Consulta">Consulta</option>
+                    <option value="Reclamo">Reclamo</option>
+                    <option value="Garantia">Garantia</option>
+                    <option value="Solicitud">Solicitud</option>
+                    <option value="Cotizacion">Cotizacion</option>
+                </select>
+            </div><br>
+            <div>
+                <textarea name="Mensaje" id="Mensaje" rows="20" cols="32"
+                    placeholder="Deja aqui tu comentario"></textarea>
+            </div>
+            <div>
+                <input type="checkbox" name="subs" value="1">
+                <div class="aceptoForm">
+                    <p>Acepto los terminos</p>
+                </div>
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar campos">
+            </div>
+        </form>
+    </main>
+    <!-- Fin Main -->
+    <!-- Inicio Footer -->
+    <footer>
+        <div class="facebookIcon">
+            <a href="https://www.facebook.com/Da3sGamingLaptops" target="_blank"><img src="../images/fbicon.png"
+                    alt="logo fb"></a>
         </div>
-        <div>
-            <label for="Correo" class="label"></label>
-            <input type="text" name="Correo" placeholder="Correo">
+        <div class="instagramIcon">
+            <a href="https://www.instagram.com/da3slaptopsgamer" target="_blank"><img src="../images/insta.png"
+                    alt="logo insta"></a>
         </div>
-        <div>
-            <label for="Telefono" class="label"></label>
-            <input type="text" name="Telefono" inputmode="numeric" pattern="\d*" placeholder="Telefono">
+        <div class="mailIcon">
+            <a href="mailto:da3sventas@gmail.com?Subject=Contacto%20/%20Consulta"><img src="../images/email.png"></a>
         </div>
-        <div>
-            <select name="option" id="option">
-                <option value="Consulta">Consulta</option>
-                <option value="Reclamo">Reclamo</option>
-                <option value="Garantia">Garantia</option>
-                <option value="Solicitud">Solicitud</option>
-                <option value="Cotizacion">Cotizacion</option>
-            </select>
-        </div><br>
-        <div>
-            <textarea name="Mensaje" id="Mensaje" rows="20" cols="32" placeholder="Deja aqui tu comentario"></textarea>
-        </div>
-        <div>
-            <input type="checkbox" name="subs" value="1">
-            <div class="aceptoForm"><p>Acepto los terminos</p></div>
-        </div>
-        <div>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpiar campos">
-        </div>
-    </form>
-</main>
-<!-- Fin Main -->
-<!-- Inicio Footer -->
-<footer>
-    <div class="facebookIcon">
-        <a href="https://www.facebook.com/Da3sGamingLaptops" target="_blank"><img src="../images/fbicon.png" alt="logo fb"></a>
-    </div>
-    <div class="instagramIcon">
-        <a href="https://www.instagram.com/da3slaptopsgamer" target="_blank"><img src="../images/insta.png" alt="logo insta"></a>
-    </div>
-    <div class="mailIcon">
-        <a href="mailto:da3sventas@gmail.com?Subject=Contacto%20/%20Consulta"><img src="../images/email.png"></a>
-    </div>
-</footer>
-<!-- Fin Footer -->
+    </footer>
+    <!-- Fin Footer -->
 </body>
+
 </html>

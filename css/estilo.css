@@ -1,133 +1,239 @@
 /*estandarizar en 1rem*/
-html{
-    font-size: 62,5%;
+html {
+    font-size: 62, 5%;
 }
 
-*{
+* {
     margin: 5px;
     padding: 0px;
     overflow-x: hidden;
 }
 
-img{
+img {
     max-width: 100%;
     display: block;
     margin: auto;
 }
 
-iframe{
+iframe {
     max-width: 100%;
     display: block;
     margin: auto;
 }
 
-nav ul{display: flex; justify-content:space-evenly;background-color: black;text-decoration: none;color: white; font-size: 2rem;font-family: 'Silkscreen', cursive;}
-li{list-style-type: none;margin: 10px;}
-a{text-decoration: none; color: white;}
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Silkscreen', cursive;
+}
+
+li {
+    list-style-type: none;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
 
 
 /* Grids */
 /* GridIndex */
-.gridIndex{
+.gridIndex {
     display: grid;
-    grid-template-areas: 
-    "logoIzq tituloCen logoDer"
-    "navbar navbar navbar"
-    "main main main"
-    "footer footer footer";
+    grid-template-areas:
+        "logoIzq tituloCen logoDer"
+        "navbar navbar navbar"
+        "main main main"
+        "footer footer footer";
     grid-template-columns: repeat(3, 25% 50% 25%);
     grid-template-rows: repeat(4, auto);
 }
-header{grid-area: logoIzq;}
-.navbar{grid-area: navbar;}
-.logoDer{grid-area: logoDer;}
-.tituloCen{grid-area: tituloCen;}
+
+header {
+    grid-area: logoIzq;
+}
+
+.navbar {
+    grid-area: navbar;
+}
+
+.logoDer {
+    grid-area: logoDer;
+}
+
+.tituloCen {
+    grid-area: tituloCen;
+}
+
 /* Fin grid Index */
 
 /* Formato titulo */
-.titulo{
+.titulo {
     font-size: 3rem;
     font-family: 'Rubik Burned', cursive;
-    color:white;
+    color: white;
     text-align: center;
     background-color: rgb(16, 4, 122);
 }
 
-#logo{text-align: center;}
+#logo {
+    text-align: center;
+}
 
 /* GridMain Index */
-.gridMainIndex{
+.gridMainIndex {
     grid-area: main;
     display: grid;
-    grid-template-areas: 
-    "servicios servicios servicios"
-    "ofrecemos ofrecemos ofrecemos"
-    "venta importacion soporte"
-    "laptopsVenta perifericos soporteImg";
+    grid-template-areas:
+        "servicios servicios servicios"
+        "ofrecemos ofrecemos ofrecemos"
+        "venta importacion soporte"
+        "laptopsVenta perifericos soporteImg";
     grid-template-columns: repeat(3, 33%);
     grid-template-rows: repeat(4, auto);
-    background-image:url("../images/back-fondo.jpg"); 
+    background-image: url("../images/back-fondo.jpg");
 }
-.servicios{grid-area: servicios;}
-.ofrecemos{grid-area: ofrecemos;}
-.venta{grid-area: venta;}
-.importacion{grid-area: importacion;}
-.soporte{grid-area: soporte;}
-.laptopsVenta{grid-area: laptopsVenta;}
-.perifericos{grid-area: perifericos;}
-.soporteImg{grid-area: soporteImg;}
+
+.servicios {
+    grid-area: servicios;
+}
+
+.ofrecemos {
+    grid-area: ofrecemos;
+}
+
+.venta {
+    grid-area: venta;
+}
+
+.importacion {
+    grid-area: importacion;
+}
+
+.soporte {
+    grid-area: soporte;
+}
+
+.laptopsVenta {
+    grid-area: laptopsVenta;
+}
+
+.perifericos {
+    grid-area: perifericos;
+}
+
+.soporteImg {
+    grid-area: soporteImg;
+}
+
 /* Fin grid main */
 
 /*Texto descricion servicios*/
-.textoServicios{
-    font-style:normal; /*estilo texto*/
-    font-family:'Gill Sans MT'; /*fuente*/
-    font-size: 2rem; /*tamañofuente*/
-    text-align: center; /*alineacion*/
-    line-height: 1.6; /*Interlineado*/
+.textoServicios {
+    font-style: normal;
+    /*estilo texto*/
+    font-family: 'Gill Sans MT';
+    /*fuente*/
+    font-size: 2rem;
+    /*tamañofuente*/
+    text-align: center;
+    /*alineacion*/
+    line-height: 1.6;
+    /*Interlineado*/
     background-color: rgb(255, 255, 255);
     margin: 20px;
     border: 2px;
     padding: 30px;
-    color:white;
+    color: white;
 }
 
 /* Grid footer */
-footer{grid-area: footer; display: flex; justify-content: space-evenly;background-color: white;}
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
 /* Fin grid footer */
 
-body{background-image:url("../images/back-fondo.jpg");}
+body {
+    background-image: url("../images/back-fondo.jpg");
+}
 
-.bordesServicios{border-radius: 20px;}
-.bordeInternoServ{border: solid 3px white;}
+.bordesServicios {
+    border-radius: 20px;
+}
+
+.bordeInternoServ {
+    border: solid 3px white;
+}
 
 /* GridMain Productos */
-.gridMainProductos{
+.gridMainProductos {
     grid-area: main;
     display: grid;
-    grid-template-areas: 
-    "nuestrosProd nuestrosProd"
-    "notebooksImgP monitoresImgP"
-    "notebooksTxt monitoresTxt"
-    "desktopsImgP consolasImgP"
-    "desktopsTxt consolasTxt";
-    grid-template-columns: repeat(2,50%);
+    grid-template-areas:
+        "nuestrosProd nuestrosProd"
+        "notebooksImgP monitoresImgP"
+        "notebooksTxt monitoresTxt"
+        "desktopsImgP consolasImgP"
+        "desktopsTxt consolasTxt";
+    grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(5, auto);
-    background-image:url("../images/back-fondo.jpg"); 
+    background-image: url("../images/back-fondo.jpg");
 }
-.nuestrosProd{grid-area: nuestrosProd;}
-.notebooksImg{grid-area:notebooksImg;}
-.notebooksTxt{grid-area: notebooksTxt;}
-.monitoresImg{grid-area: monitoresImg;}
-.monitoresTxt{grid-area: monitoresTxt;}
-.desktopsImg{grid-area: desktopsImg;}
-.desktopsTxt{grid-area: desktopsTxt;}
-.consolasImg{grid-area: consolasImg;}
-.consolasTxt{grid-area: consolasTxt;}
+
+.nuestrosProd {
+    grid-area: nuestrosProd;
+}
+
+.notebooksImg {
+    grid-area: notebooksImg;
+}
+
+.notebooksTxt {
+    grid-area: notebooksTxt;
+}
+
+.monitoresImg {
+    grid-area: monitoresImg;
+}
+
+.monitoresTxt {
+    grid-area: monitoresTxt;
+}
+
+.desktopsImg {
+    grid-area: desktopsImg;
+}
+
+.desktopsTxt {
+    grid-area: desktopsTxt;
+}
+
+.consolasImg {
+    grid-area: consolasImg;
+}
+
+.consolasTxt {
+    grid-area: consolasTxt;
+}
+
 /* Fin grid main */
-.borderProductos{border: 10px white solid;margin: 5px;}
+.borderProductos {
+    border: 10px white solid;
+    margin: 5px;
+}
+
 /*estilo productos*/
-.estiloProductos{
+.estiloProductos {
     color: white;
     font-size: 2rem;
     margin: 20px;
@@ -135,31 +241,59 @@ body{background-image:url("../images/back-fondo.jpg");}
 }
 
 /* Grid main Nosotros */
-.gridMainNosotros{
+.gridMainNosotros {
     grid-area: main;
     display: grid;
     grid-template-areas:
-    "tituloNos tituloNos tituloNos"
-    "ventaImgNos textoVentaNos textoVentaNos"
-    "textoAtencionNos textoAtencionNos atencionImgNos"
-    "enviosImgNos textoEnviosNos textoEnviosNos"
-    "textoPagosNos textoPagosNos pagosImgNos";
-    grid-template-columns: repeat(3,33%);
-    grid-template-rows: repeat(5,auto);
+        "tituloNos tituloNos tituloNos"
+        "ventaImgNos textoVentaNos textoVentaNos"
+        "textoAtencionNos textoAtencionNos atencionImgNos"
+        "enviosImgNos textoEnviosNos textoEnviosNos"
+        "textoPagosNos textoPagosNos pagosImgNos";
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(5, auto);
 }
-.tituloNos{grid-area: tituloNos;}
-.ventaImgNos{grid-area: ventaImgNos;}
-.textoVentaNos{grid-area: textoVentaNos;}
-.textoAtencionNos{grid-area: textoAtencionNos;}
-.atencionImgNos{grid-area: atencionImgNos;}
-.enviosImgNos{grid-area: enviosImgNos;}
-.textoEnviosNos{grid-area: textoEnviosNos;}
-.textoPagosNos{grid-area: textoPagosNos;}
-.pagosImgNos{grid-area: pagosImgNos;}
+
+.tituloNos {
+    grid-area: tituloNos;
+}
+
+.ventaImgNos {
+    grid-area: ventaImgNos;
+}
+
+.textoVentaNos {
+    grid-area: textoVentaNos;
+}
+
+.textoAtencionNos {
+    grid-area: textoAtencionNos;
+}
+
+.atencionImgNos {
+    grid-area: atencionImgNos;
+}
+
+.enviosImgNos {
+    grid-area: enviosImgNos;
+}
+
+.textoEnviosNos {
+    grid-area: textoEnviosNos;
+}
+
+.textoPagosNos {
+    grid-area: textoPagosNos;
+}
+
+.pagosImgNos {
+    grid-area: pagosImgNos;
+}
+
 /* Fin grid main Nosotros */
 
 /*estilo mas de nosotros*/
-.textoNosotros{
+.textoNosotros {
     font-style: normal;
     font-size: 1.8rem;
     font-family: 'Gill Sans';
@@ -167,56 +301,83 @@ body{background-image:url("../images/back-fondo.jpg");}
     text-align: justify;
     padding-top: 100px;
 }
-.estiloNosotros{
+
+.estiloNosotros {
     font-style: normal;
     font-size: 3rem;
     font-family: 'Gill Sans';
     color: white;
     text-align: center;
 }
+
 /* Fin Grid Nosotros */
 
 /* Grid Feedback */
-.gridMainFeed{
+.gridMainFeed {
     grid-area: main;
     display: grid;
     grid-template-areas:
-    "tituloFeed tituloFeed tituloFeed"
-    "video1 textoVideo1 textoVideo1"
-    "textoVideo2 textoVideo2 video2";
-    grid-template-columns: repeat(3,auto);
-    grid-template-rows: repeat(3,auto);
+        "tituloFeed tituloFeed tituloFeed"
+        "video1 textoVideo1 textoVideo1"
+        "textoVideo2 textoVideo2 video2";
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
 }
-.tituloFeed{grid-area: tituloFeed;}
-.video1{grid-area: video1;}
-.textoVideo1{grid-area: textoVideo1;padding: 50px;text-align: justify;}
-.video2{grid-area: video2;padding-right: 100px;}
-.textoVideo2{grid-area: textoVideo2;padding: 50px;text-align: right;}
+
+.tituloFeed {
+    grid-area: tituloFeed;
+}
+
+.video1 {
+    grid-area: video1;
+}
+
+.textoVideo1 {
+    grid-area: textoVideo1;
+    padding: 50px;
+    text-align: justify;
+}
+
+.video2 {
+    grid-area: video2;
+    padding-right: 100px;
+}
+
+.textoVideo2 {
+    grid-area: textoVideo2;
+    padding: 50px;
+    text-align: right;
+}
+
 /* Fin Grid Feedback */
 /*estilo feedback*/
-.estiloFeed{
+.estiloFeed {
     border: solid 5px blue;
-    color:white;
-    padding-left:50px;
+    color: white;
+    padding-left: 50px;
     padding-bottom: 20px;
     text-align: center;
     font-size: 2rem;
 }
+
 /* Grid formulario */
-.gridMainFormulario{
+.gridMainFormulario {
     grid-area: main;
     display: grid;
     grid-template-areas:
-    "blanco contactanosImg contactanosImg"
-    "blanco formulario formulario";
+        "blanco contactanosImg contactanosImg"
+        "blanco formulario formulario";
     grid-template-columns: 33% 33% 33%;
-    grid-template-rows: repeat(2,auto);
+    grid-template-rows: repeat(2, auto);
 }
-.contactanosImg{
+
+.contactanosImg {
     grid-area: contactanosImg;
-    float: left; width: 390px;
+    float: left;
+    width: 390px;
 }
-.formulario{
+
+.formulario {
     grid-area: formulario;
     height: 100%;
     box-sizing: border-box;
@@ -224,7 +385,11 @@ body{background-image:url("../images/back-fondo.jpg");}
     border-radius: 5px;
     width: 500px;
 }
-.blanco{grid-area: blanco;}
+
+.blanco {
+    grid-area: blanco;
+}
+
 .label {
     position: absolute;
     top: 15px;
@@ -236,152 +401,305 @@ body{background-image:url("../images/back-fondo.jpg");}
     transition: 0.5s;
     z-index: 0;
 }
-input{font-size: 18px;transition: 1s;}
-input:focus{font-size: 20px;}
-select{font-size: 20px;}
-textarea{font-size: 18px;}
+
+input {
+    font-size: 18px;
+    transition: 1s;
+}
+
+input:focus {
+    font-size: 20px;
+}
+
+select {
+    font-size: 20px;
+}
+
+textarea {
+    font-size: 18px;
+}
+
 /* Fin grid Formulario */
 
 
 /* Mobile 769px */
-@media only screen and (max-width: 769px){
+@media only screen and (max-width: 769px) {
+
     /* grid Index */
-    nav ul{display: flex;flex-wrap: wrap;font-size: 1.3rem;}
-    .gridIndex{
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.3rem;
+    }
+
+    .gridIndex {
         grid-area: body;
         display: grid;
-        grid-template-areas: 
-        "logo navbar navbar"
-        "main main main"
-        "footer footer footer";
+        grid-template-areas:
+            "logo navbar navbar"
+            "main main main"
+            "footer footer footer";
         grid-template-columns: repeat(3, 33%);
         grid-template-rows: repeat(3, auto);
         background-image: url(../images/wallmobile.jpg);
     }
-    header{grid-area: logo;}
-    .navbar{grid-area: navbar;}
+
+    header {
+        grid-area: logo;
+    }
+
+    .navbar {
+        grid-area: navbar;
+    }
+
     /* Fin grid Index */
     /* grid main Index mobile*/
-    .gridMainIndex{
+    .gridMainIndex {
         grid-area: main;
         display: grid;
         font-size: 1.3rem;
         grid-template-areas:
-        "servicios"
-        "ofrecemos"
-        "venta"
-        "importacion"
-        "soporte";
+            "servicios"
+            "ofrecemos"
+            "venta"
+            "importacion"
+            "soporte";
         grid-template-columns: 100%;
-        grid-template-rows: repeat(5,auto);
+        grid-template-rows: repeat(5, auto);
     }
-    .servicios{grid-area: servicios;}
-    .ofrecemos{grid-area: ofrecemos;}
-    .venta{grid-area: venta;}
-    .importacion{grid-area: importacion;}
-    .soporte{grid-area: soporte;}
+
+    .servicios {
+        grid-area: servicios;
+    }
+
+    .ofrecemos {
+        grid-area: ofrecemos;
+    }
+
+    .venta {
+        grid-area: venta;
+    }
+
+    .importacion {
+        grid-area: importacion;
+    }
+
+    .soporte {
+        grid-area: soporte;
+    }
+
     /* Fin grid main Index mobile*/
     /* elementos ocultos mobile */
-    .laptopsVenta{display: none;}
-    .perifericos{display: none;}
-    .soporteImg{display: none;}
-    .logoDer{display: none;}
-    .tituloCen{display: none;}
+    .laptopsVenta {
+        display: none;
+    }
+
+    .perifericos {
+        display: none;
+    }
+
+    .soporteImg {
+        display: none;
+    }
+
+    .logoDer {
+        display: none;
+    }
+
+    .tituloCen {
+        display: none;
+    }
+
     /* fin elementos ocultos */
 
     /* Grid main Productos Mobile */
-    .gridMainProductos{
+    .gridMainProductos {
         grid-area: main;
         display: grid;
         font-size: 1.3rem;
         grid-template-areas:
-        "nuestrosProd"
-        "notebooksImgP"
-        "monitoresImgP"
-        "desktopsImgP"
-        "consolasImgP";
+            "nuestrosProd"
+            "notebooksImgP"
+            "monitoresImgP"
+            "desktopsImgP"
+            "consolasImgP";
         grid-template-columns: 100%;
-        grid-template-rows: repeat(5,auto);
+        grid-template-rows: repeat(5, auto);
     }
-    .nuestrosProd{grid-area: nuestrosProd;font-size: 1.6rem;}
-    .notebooksImgP{grid-area: notebooksImgP;}
-    .monitoresImgP{grid-area: monitoresImgP;}
-    .desktopsImgP{grid-area: desktopsImgP;}
-    .consolasImgP{grid-area: consolasImgP;}
+
+    .nuestrosProd {
+        grid-area: nuestrosProd;
+        font-size: 1.6rem;
+    }
+
+    .notebooksImgP {
+        grid-area: notebooksImgP;
+    }
+
+    .monitoresImgP {
+        grid-area: monitoresImgP;
+    }
+
+    .desktopsImgP {
+        grid-area: desktopsImgP;
+    }
+
+    .consolasImgP {
+        grid-area: consolasImgP;
+    }
+
     /* fin grid productos mobile */
     /* Elementos ocultos productos */
-    .notebooksTxt{display: none;}
-    .monitoresTxt{display: none;}
-    .desktopsTxt{display: none;}
-    .consolasTxt{display: none;}
+    .notebooksTxt {
+        display: none;
+    }
+
+    .monitoresTxt {
+        display: none;
+    }
+
+    .desktopsTxt {
+        display: none;
+    }
+
+    .consolasTxt {
+        display: none;
+    }
+
     /* fin elementos ocultos */
 
     /* grid nosotros mobile */
-    .gridMainNosotros{
+    .gridMainNosotros {
         grid-area: main;
         display: grid;
         font-size: 1.3rem;
         grid-template-areas:
-        "tituloNos"
-        "ventaImgNos"
-        "textoVentaNos"
-        "atencionImgNos"
-        "textoAtencionNos "
-        "enviosImgNos"
-        "textoEnviosNos"
-        "pagosImgNos"
-        "textoPagosNos";
-        grid-template-columns:100%;
-        grid-template-rows: repeat(9,auto);
+            "tituloNos"
+            "ventaImgNos"
+            "textoVentaNos"
+            "atencionImgNos"
+            "textoAtencionNos "
+            "enviosImgNos"
+            "textoEnviosNos"
+            "pagosImgNos"
+            "textoPagosNos";
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(9, auto);
     }
-    .tituloNos{grid-area: tituloNos;}
-    .ventaImgNos{grid-area: ventaImgNos;}
-    .textoVentaNos{grid-area: textoVentaNos;padding-top: 0;}
-    .atencionImgNos{grid-area: atencionImgNos;}
-    .textoAtencionNos{grid-area: textoAtencionNos;padding-top: 0;}
-    .enviosImgNos{grid-area: enviosImgNos;}
-    .textoEnviosNos{grid-area: textoEnviosNos;padding-top: 0;}
-    .pagosImgNos{grid-area: pagosImgNos;}
-    .textoPagosNos{grid-area: textoPagosNos;padding-top: 0;}
+
+    .tituloNos {
+        grid-area: tituloNos;
+    }
+
+    .ventaImgNos {
+        grid-area: ventaImgNos;
+    }
+
+    .textoVentaNos {
+        grid-area: textoVentaNos;
+        padding-top: 0;
+    }
+
+    .atencionImgNos {
+        grid-area: atencionImgNos;
+    }
+
+    .textoAtencionNos {
+        grid-area: textoAtencionNos;
+        padding-top: 0;
+    }
+
+    .enviosImgNos {
+        grid-area: enviosImgNos;
+    }
+
+    .textoEnviosNos {
+        grid-area: textoEnviosNos;
+        padding-top: 0;
+    }
+
+    .pagosImgNos {
+        grid-area: pagosImgNos;
+    }
+
+    .textoPagosNos {
+        grid-area: textoPagosNos;
+        padding-top: 0;
+    }
+
     /* Fin grid Nosotros Mobile */
     /* Grid Feedback Mobile */
-    .gridMainFeed{
+    .gridMainFeed {
         grid-area: main;
         display: grid;
         font-size: 1.3rem;
         grid-template-areas:
-        "tituloFeed"
-        "textoVideo1"
-        "video1"
-        "textoVideo2"
-        "video2";
+            "tituloFeed"
+            "textoVideo1"
+            "video1"
+            "textoVideo2"
+            "video2";
         grid-template-columns: 100%;
-        grid-template-rows: repeat(5,auto);
+        grid-template-rows: repeat(5, auto);
     }
-    .tituloFeed{grid-area: tituloFeed;font-size: 1.5rem;}
-    .video1{grid-area: video1;}
-    .textoVideo1{grid-area: textoVideo1;padding: 0px;text-align:start; font-size: 1.4rem;}
-    .video2{grid-area: video2;padding-right: 0px;}
-    .textoVideo2{grid-area: textoVideo2;padding: 0px;text-align: start;font-size: 1.4rem;}
+
+    .tituloFeed {
+        grid-area: tituloFeed;
+        font-size: 1.5rem;
+    }
+
+    .video1 {
+        grid-area: video1;
+    }
+
+    .textoVideo1 {
+        grid-area: textoVideo1;
+        padding: 0px;
+        text-align: start;
+        font-size: 1.4rem;
+    }
+
+    .video2 {
+        grid-area: video2;
+        padding-right: 0px;
+    }
+
+    .textoVideo2 {
+        grid-area: textoVideo2;
+        padding: 0px;
+        text-align: start;
+        font-size: 1.4rem;
+    }
+
     /* Fin Grid feeback Mobile */
     /* Grid Formulario Mobile */
-    .gridMainFormulario{
+    .gridMainFormulario {
         grid-area: main;
         display: grid;
         font-size: 1.3rem;
         grid-template-areas:
-        "contactanosImg"
-        "formulario";
+            "contactanosImg"
+            "formulario";
         grid-template-columns: 100%;
-        grid-template-rows: repeat(2,auto);
+        grid-template-rows: repeat(2, auto);
     }
-    .contactoForm{grid-area: contactoForm;}
-    .formulario{
+
+    .contactoForm {
+        grid-area: contactoForm;
+    }
+
+    .formulario {
         grid-area: formulario;
         width: auto;
         height: auto;
     }
+
     /* Fin Formulario Mobile */
-    footer{grid-area: footer;display: flex;flex-direction: row;}
+    footer {
+        grid-area: footer;
+        display: flex;
+        flex-direction: row;
+    }
 }
+
 /* fin version Mobile */
